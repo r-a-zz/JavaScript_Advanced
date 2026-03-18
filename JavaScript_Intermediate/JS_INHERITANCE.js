@@ -18,5 +18,4 @@ console.log(p1);
 
 let p3 = new String("RAJ");   //p3 is an Object containing string, not a string.
 let p4 = "RAJ";     //Normal String.
-console.log(  p3,",",typeof p3   ,"\n",    p4,",",typeof p4  );  
-
+console.log(  p3,",",typeof p3   ,"\n",    p4,",",typeof p4  );

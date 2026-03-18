@@ -10,6 +10,8 @@ Person.prototype.jar=()=>{console.log("Say Hello")};
 /* 
     Person.prototype={
 
+        constrcutor:Person,
+
         raj(){
         console.log("Say Hello")
         },
