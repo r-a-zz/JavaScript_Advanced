@@ -2,7 +2,7 @@ let p1 = {              //A BASIC OBJECT Literal IN JAVASCRIPT.
     fname: "Raj",
     lname: "Singh"
     //__proto__  <- Hidden Reference , Generally contains Shared Methods and Functions.  
-}
+};
 
 console.log(p1);            
 console.log(p1.__proto__);  // p1.__proto__  is NULL.
