@@ -1,3 +1,4 @@
+//ONLY function Carry Closures .
 function plate(){
     let temp=0;
 

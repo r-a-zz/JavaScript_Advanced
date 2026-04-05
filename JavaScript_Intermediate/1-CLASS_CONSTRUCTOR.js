@@ -32,7 +32,6 @@ class Person{
     }
 };
 
-
 let Raj = new Person("Raj",23,'M');
 
 console.log(Raj);
