@@ -1,0 +1,19 @@
+.practice-page {
+  max-width: 720px;
+  margin: 24px auto;
+  padding: 0 16px;
+  display: grid;
+  gap: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fafafa;
+}
+
+button {
+  margin-top: 8px;
+}

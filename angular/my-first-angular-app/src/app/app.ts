@@ -1,18 +1,26 @@
 import { Component, signal } from '@angular/core';
-// import { RouterOutlet } from '@angular/router';
+import { Button } from './button/button';
+import { Profile } from './profile/profile';
 
 @Component({
   selector: 'app-root',
-  // imports: [RouterOutlet],
+  imports: [Profile, Button],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal("Hey I'm Raj");
-  // protected readonly title = "Hey I'm Raj");     If this is done, i.e.,if title is declared string, then inside the constructor it's too taken as  string.
-  
-  constructor() {
-    this.title.set("This is the New Title");
-    // this.title="This is the New Title";
+  // Signals for reactive interpolation practice
+  readonly title = signal('This heading is reactive');
+  readonly heading = signal('This is the heading');
+  readonly body = signal('This is the body');
+
+  // Normal vars vs signal vars
+  a = 4;
+  b = 3;
+  c = signal(4);
+  d = signal(5);
+
+  changeTitle(): void {
+    this.title.set('Clicked!');
   }
 }

@@ -1,3 +1,25 @@
-<h1>{{title()}}</h1>   <!-- <h1>{{title}}</h1> --> 
-<p>{{title()}}</p>
-<p>Hey I'm Raj</p>
+<main class="practice-page">
+  <section class="card">
+    <h1>Angular Basics Practice</h1>
+    <h2>{{ title() }}</h2>
+    <p>{{ heading() }}</p>
+    <p>{{ body() }}</p>
+    <button type="button" (click)="changeTitle()">Click Me</button>
+  </section>
+
+  <section class="card">
+    <h3>Interpolation Practice</h3>
+    <p>Static text: Hey I'm Raj</p>
+    <p>Literal expression: {{ 2 + 4 }}</p>
+    <p>Variable expression: {{ a + b }}</p>
+    <p>Signal expression: {{ c() + d() }}</p>
+  </section>
+
+  <section class="card">
+    <app-profile></app-profile>
+  </section>
+
+  <section class="card">
+    <app-button></app-button>
+  </section>
+</main>
